@@ -28,8 +28,18 @@
                 text-decoration: none;
                 color: @header-font-color;
                 font-size: 1.5rem;
+
                 @media @phone {
                     padding: 4%;
+                }
+                
+                &:hover {
+                    .keyframes(fade-in;{
+                        0% { opacity: 0.5; }
+                        100% { opacity: 1; }
+                        });
+ 
+                    .animation(fade-in 1s linear infinite alternate);
                 }
             }
         }
