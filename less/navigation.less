@@ -9,17 +9,28 @@
         padding: .75%;
         width: 50%;
         text-align: center;
+            @media @phone {
+                width: 100%;
+            }
         
         
 
         nav  {
             border: blue;
+            @media @phone {
+                display: flex;
+                justify-content: center;
+            }
+            
             
             a {
                 padding: 5%;
                 text-decoration: none;
                 color: @header-font-color;
                 font-size: 1.5rem;
+                @media @phone {
+                    padding: 4%;
+                }
             }
         }
     }
