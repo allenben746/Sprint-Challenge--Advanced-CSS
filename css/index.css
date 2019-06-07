@@ -131,11 +131,16 @@ table {
 }
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+}
+body {
+  width: 95%;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -159,6 +164,25 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navContainer .navItem {
+  padding: 0.75%;
+  width: 50%;
+  text-align: center;
+}
+.navContainer .navItem nav {
+  border: blue;
+}
+.navContainer .navItem nav a {
+  padding: 5%;
+  text-decoration: none;
+  color: #23293B;
+  font-size: 1.5rem;
 }
 footer {
   color: #22283B;
