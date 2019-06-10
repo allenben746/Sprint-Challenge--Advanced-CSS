@@ -1,1 +1,33 @@
 // Mixins Here
+
+//Para Mix-In for Button
+
+.buttonMixin(@color; @sizeRem; @radius;) {
+    border-radius: @radius;
+    background-color: @color;
+    width: @sizeRem;
+    height: @sizeRem / 2;
+    display: flex;
+}
+
+.homePageText { //To set font size and color for mobile
+    font-size:1.4em;
+    color: @header-font-color;
+}
+
+.autoCenter { //Basic function to center content on the x-axis
+    display: flex;
+    justify-content: center;
+}
+
+//Animation
+.keyframes(@name; @arguments) {
+    @-moz-keyframes @name { @arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+    @keyframes @name { @arguments(); }
+}
+.animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    animation: @arguments;
+}
